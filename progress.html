@@ -8,12 +8,14 @@
             width: 100%;
         }
 
+        body {
+            display: table;
+        }
 
         .placeholder {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          align-content: center;
+            text-align: center;
+            display: table-cell;
+            vertical-align: middle;
         }
         .navigationbar{
           background-color: #002d5d;
@@ -25,40 +27,32 @@
           margin-left: 0 !important;
         }
         </style>
-        
-  </head>
+    </head>
 
 <body>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
-
   <div id="main">
-
-    <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
-      <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
-      <a href="aboutus.html" class="w3-bar-item w3-button">About Us</a>
-      <a href="progress.html" class="w3-bar-item w3-button">Progress & Updates</a>
-      <a href="https://discord.gg/D3W9bSQSEZ" target="_blank" rel="noopener noreferrer" class="w3-bar-item w3-button">Join Us!</a>
-    </div>
-
-    <div class="navigationbar">
-      <button id="openNav" class="w3-button navigationbar w3-xlarge" onclick="w3_open()">☰</button>
-      <button class="w3-button navigationbar w3-xlarge w3-border-right" onclick="home()">Home</button>
-        <div class="w3-container">
-          <h1>MNFRCA Official Website (Under construction)</h1>
+        <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+            <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+            <a href="aboutus.html" class="w3-bar-item w3-button">About Us</a>
+            <a href="progress.html" class="w3-bar-item w3-button">Progress & Updates</a>
+            <a href="https://discord.gg/D3W9bSQSEZ" target="_blank" rel="noopener noreferrer" class="w3-bar-item w3-button">Join Us!</a>
         </div>
-    </div>
 
+        <div class="navigationbar">
+            <button id="openNav" class="w3-button navigationbar w3-xlarge" onclick="w3_open()">☰</button>
+            <button class="w3-button navigationbar w3-xlarge w3-border-right" onclick="home()">Home</button>
+            <div class="w3-container">
+                <h1>Progress & Updates</h1>
+            </div>
+        </div>
 
-    <div class="placeholder w3-container">    
-      <div class="w3-container w3-center w3-spin" style="margin: 200px;">
-        <h1>MNFRCA website is under construction!!!!</h1>
-      </div>
-    </div>
-  </div>
-  
-  <script>
+        <p> We cooking </p>
+    </div> 
+
+ <script>
     function w3_open() {
         document.getElementById("main").style.marginLeft = "25%";
         document.getElementById("mySidebar").style.width = "25%";
@@ -72,6 +66,6 @@
     }
     function home() {
       window.location.href='index.html';
-    }
+    }   
   </script>
 </body>
